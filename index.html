@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YRSK AI Growth Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YRSK <span>AI</span></h1>
+      <p class="subtitle">The World's First Hybrid Growth Engine.</p>
+      <p class="subtitle" style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Combining 24/7 AI Intelligence with Award-Winning Human Expertise.</p>
+    </header>
+    
+    <form id="urlForm" class="url-form">
+      <input type="url" id="websiteUrl" placeholder="ENTER WEBSITE URL" required />
+      <button type="submit" id="generateBtn">ACTIVATE AGENTS</button>
+    </form>
+
+    <div id="loading" class="loading hidden">
+      <div class="scanner-container">
+        <div class="scanner-line"></div>
+        <div class="scanner-text">🚀 Initializing YRSK AI Agents...</div>
+        <div class="status-log" id="statusLog"></div>
+      </div>
+    </div>
+
+    <div id="report" class="report hidden">
+      <!-- Phase 1 -->
+      <div class="card" id="ppcInsight">
+        <div class="card-header">
+          <h2>Phase 1: Performance Marketing & Ads Agent</h2>
+          <span class="badge">Ads & ROI</span>
+        </div>
+        <div class="features-list">
+          <p><strong>• LTV-Driven Budgeting:</strong> Reallocates spend to high-LTV ads.</p>
+          <p><strong>• 24/7 Budget Pilot:</strong> Auto-scales winning campaigns.</p>
+          <p><strong>• Creative Sync:</strong> Suggests winning hooks to content team.</p>
+        </div>
+        <div class="impact-section">
+          <h3>🤖 AI AUTOMATION IMPACT</h3>
+          <p><strong>What it does:</strong> Autonomously manages ad spend 24/7 across Google & Meta.</p>
+          <p><strong>Value:</strong> Prevents wasted budget at night & scales profit instantly.</p>
+        </div>
+        <div class="ai-output">
+          <p id="ppcContent"></p>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="card" id="seoInsight">
+        <div class="card-header">
+          <h2>Phase 2: SEO & Content Intelligence Agent</h2>
+          <span class="badge">Search & Rank</span>
+        </div>
+        <div class="features-list">
+          <p><strong>• Ranking Guard:</strong> Detects threats & content gaps.</p>
+          <p><strong>• Trend-Jacker:</strong> Auto-generates scripts for industry events.</p>
+          <p><strong>• Link Architect:</strong> Audits internal linking structure.</p>
+        </div>
+        <div class="impact-section">
+          <h3>🤖 AI AUTOMATION IMPACT</h3>
+          <p><strong>What it does:</strong> Scans competitors daily to find "Keyword Gaps".</p>
+          <p><strong>Value:</strong> Keeps you ranked #1 by predicting search trends.</p>
+        </div>
+        <div class="ai-output">
+          <p id="seoContent"></p>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="card" id="creativeInsight">
+        <div class="card-header">
+          <h2>Phase 3: Creative & Video Automation Agent</h2>
+          <span class="badge">Visuals & 3D</span>
+        </div>
+        <div class="features-list">
+          <p><strong>• Brand Sentinel:</strong> Audits assets for brand compliance.</p>
+          <p><strong>• Content Multiplier:</strong> Auto-resizes for Reels/Shorts.</p>
+          <p><strong>• Hook Generator:</strong> Suggests "first 3 seconds" hooks.</p>
+        </div>
+        <div class="impact-section">
+          <h3>🤖 AI AUTOMATION IMPACT</h3>
+          <p><strong>What it does:</strong> Turns 1 master video into 20+ platform-ready assets.</p>
+          <p><strong>Value:</strong> 10x Content Output without hiring more editors.</p>
+        </div>
+        <div class="ai-output">
+          <p id="creativeContent"></p>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="card" id="techInsight">
+        <div class="card-header">
+          <h2>Phase 4: Web, App & UX Optimization Agent</h2>
+          <span class="badge">Tech & UX</span>
+        </div>
+        <div class="features-list">
+          <p><strong>• UX Auditor:</strong> Heatmap analysis for conversion leaks.</p>
+          <p><strong>• Lead-Capture:</strong> Pre-qualifies inbound leads.</p>
+          <p><strong>• Site Monitor:</strong> Auto-detects broken links & speed issues.</p>
+        </div>
+        <div class="impact-section">
+          <h3>🤖 AI AUTOMATION IMPACT</h3>
+          <p><strong>What it does:</strong> Monitors site health & user friction points 24/7.</p>
+          <p><strong>Value:</strong> Recovers lost sales from technical glitches instantly.</p>
+        </div>
+        <div class="ai-output">
+          <p id="techContent"></p>
+        </div>
+      </div>
+
+      <div class="card growth-score" id="growthScoreCard">
+        <h2>📈 YRSK Growth Score</h2>
+        <p id="growthScore"></p>
+        <p id="improvement"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
