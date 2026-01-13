@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 800);
 
     // Call Backend API
-    fetch(`http://localhost:3000/analyze?url=${encodeURIComponent(url)}`)
+    fetch(`/analyze?url=${encodeURIComponent(url)}`)
       .then(res => res.json())
       .then(data => {
         clearInterval(interval);
